@@ -1,3 +1,3 @@
 module "vm_module"{
-    source = "../module_instance"
+    source = "../parent_module"
 }
