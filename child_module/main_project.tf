@@ -5,7 +5,7 @@ module "vm_module"{
         instance1 = {
             name = "myinstance1"
             machine_type = "e2-medium"
-            zone = "us-east1-a"
+            zone = "us-east1-c"
             boot_disk_image = "debian-cloud/debian-10"
             network = "default"
         }
