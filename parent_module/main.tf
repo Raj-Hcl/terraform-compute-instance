@@ -6,7 +6,7 @@ provider "google" {
 resource "google_compute_instance" "myvm"{
 for_each = var.myinstance
 
-    name         = each.key
+    name         = each.value.name
     machine_type = each.value.machine_type
     zone         = each.value.zone
 
