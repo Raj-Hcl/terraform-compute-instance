@@ -3,18 +3,18 @@ module "vm_module"{
 
     myinstance = {
         instance1 = {
-            name = "myinstance1"
-            machine_type = "e2-medium"
-            zone = "us-east1-c"
+            name            = "myinstance1"
+            machine_type    = "e2-medium"
+            zone            = "us-east1-c"
             boot_disk_image = "debian-cloud/debian-10"
-            network = "default"
+            network         = "default"
         }
         instance2 = {
-           name = "myinstance2"
-            machine_type = "e2-medium"
-            zone = "us-east1-b"
+           name             = "myinstance2"
+            machine_type    = "e2-medium"
+            zone            = "us-east1-b"
             boot_disk_image = "debian-cloud/debian-10"
-            network = "default" 
+            network         = "default" 
         }
     }
 }
@@ -32,7 +32,7 @@ output "instancezone" {
 }
 
 output "instance_bootdisk" {
-  value = module.vm_module.boot_disk
+  value     = module.vm_module.boot_disk
   sensitive = true
 }
 
