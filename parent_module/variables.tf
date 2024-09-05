@@ -24,6 +24,3 @@ variable "myinstance" {
     }
 }
 
-variable "GOOGLE_CREDENTIALS" {
-    type = string
-}
