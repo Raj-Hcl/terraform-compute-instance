@@ -23,9 +23,8 @@ output "boot_disk" {
   value = {
     for instance_key, instance_value in google_compute_instance.myvm :
     instance_key => instance_value.boot_disk
-
-    sensitive = true
   }
+    sensitive = true
 }
 
 output "network" {
