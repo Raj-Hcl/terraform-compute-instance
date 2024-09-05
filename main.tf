@@ -1,5 +1,5 @@
 module "vm_module"{
-    source = "../parent_module"
+    source = "./parent_module"
 
     myinstance = {
         instance1 = {
