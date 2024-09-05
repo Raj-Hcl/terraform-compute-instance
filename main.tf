@@ -19,6 +19,10 @@ module "vm_module"{
     }
 }
 
+variable "GOOGLE_CREDENTIALS" {
+    type = string
+}
+
 output "instancename" {
   value = module.vm_module.instance_name
 }
