@@ -6,14 +6,14 @@ module "vm_module"{
             name            = "myinstance1"
             machine_type    = "e2-medium"
             zone            = "us-east1-c"
-            boot_disk_image = "debian-cloud/debian-10"
+            boot_disk_image = "debian-cloud/debian-12"
             network         = "default"
         }
         instance2 = {
            name             = "myinstance2"
             machine_type    = "e2-medium"
             zone            = "us-east1-b"
-            boot_disk_image = "debian-cloud/debian-10"
+            boot_disk_image = "debian-cloud/debian-12"
             network         = "default" 
         }
     }
