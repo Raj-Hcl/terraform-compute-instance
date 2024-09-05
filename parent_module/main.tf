@@ -1,8 +1,3 @@
-provider "google" {
-    credentials = "keys.json"
-    project     = "qwiklabs-gcp-03-a349fd59361c"
-}
-
 resource "google_compute_instance" "myvm"{
 for_each = var.myinstance
 
